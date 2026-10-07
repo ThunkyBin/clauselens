@@ -83,7 +83,7 @@ See [the current test report](docs/TEST_REPORT.md), [consensus design](docs/CONS
 
 Confirm the currently supported Bradbury network with `genlayer network list`, select `testnet-bradbury`, then deploy `contracts/ClauseLens.py` with the repository’s CLI deployment script. The deployment writes a real contract and requires an explicit wallet approval. Do not use a generated or guessed address. For local testing, put the real address in the untracked `frontend/.env.local`; for GitHub Pages, set the repository variable `NEXT_PUBLIC_CONTRACT_ADDRESS` and push to `main` to rebuild the static site. Exact commands and prerequisites are in [the deployment notes](docs/ARCHITECTURE.md#deployment).
 
-- Live demo URL: not deployed yet.
+- Live demo URL: https://thunkybin.github.io/clauselens/ (static site deployed; contract not configured yet).
 - Bradbury contract: not deployed yet.
 - Transaction/explorer evidence: none yet.
 

@@ -4,7 +4,7 @@
 
 **Category:** Projects / developer contribution
 
-**Status:** Submission draft; deployment and public links not yet available.
+**Status:** Submission draft; source and website are public, but Bradbury contract deployment and transaction evidence are pending.
 
 ## One-line description
 
@@ -38,8 +38,8 @@ The repository includes a threat model, narrow consensus design, URL checks, sou
 
 ## Evidence (refresh after release)
 
-- GitHub: https://github.com/ThunkyBin/clauselens (public source; initial push is the next release step)
-- Live demo: https://thunkybin.github.io/clauselens/ (GitHub Pages workflow configured; deployment pending)
+- GitHub: https://github.com/ThunkyBin/clauselens (public source)
+- Live demo: https://thunkybin.github.io/clauselens/ (static app is live; contract is not configured)
 - Bradbury contract: **not deployed**
 - Deployment transaction / explorer: **none**
 - Direct test report: see `docs/TEST_REPORT.md`; update after the final test run.

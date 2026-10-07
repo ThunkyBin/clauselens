@@ -3,7 +3,7 @@
 ## Components
 
 - `contracts/ClauseLens.py`: contract-owned watch state, baseline profiles, compare/watch writes, public read methods, URL input checks, GenLayer web + LLM execution, and narrow equivalence.
-- `frontend/`: Next.js 16 / React 19 responsive interface, EIP-1193 wallet connection, direct GenLayerJS calls, transaction lifecycle, results, and plain-text demo routes.
+- `frontend/`: Next.js 16 / React 19 responsive interface, EIP-1193 wallet connection, direct GenLayerJS calls, transaction lifecycle, results, and public plain-text fixtures under `frontend/public/demo/`.
 - `packages/sdk/`: typed Bradbury client helpers for watch creation/checks, comparisons, reads, and receipts.
 - No backend service or local classifier participates in verdicts.
 
@@ -20,11 +20,11 @@
 1. Verify the current Bradbury configuration against [official network docs](https://docs.genlayer.com/developers/networks) and `genlayer network list`.
 2. Set the CLI’s active network to `testnet-bradbury`; inspect the command’s confirmation details before approving a wallet transaction.
 3. Run `genlayer deploy` from the repo root. `deploy/deployScript.ts` deploys `contracts/ClauseLens.py` and prints the receipt-derived address and transaction only after an accepted execution.
-4. Put that verified contract address in `frontend/.env.local` as `NEXT_PUBLIC_CONTRACT_ADDRESS`.
-5. Build and host the frontend on a public HTTPS origin, set `NEXT_PUBLIC_DEMO_BASE_URL` to that origin, and rebuild. Validators cannot fetch localhost.
-6. Run the Compare scenarios against the deployed public fixtures, then record real contract, transaction, and explorer links in README and portal submission copy.
+4. Set the verified address as the GitHub repository variable `NEXT_PUBLIC_CONTRACT_ADDRESS`. The Pages workflow rebuilds the site on the next push to `main` (or a manual workflow run).
+5. The public HTTPS site is https://thunkybin.github.io/clauselens/; its plain-text fixtures are hosted under `/demo/*.txt` for validator access. The current UI correctly reports that the contract is not configured.
+6. After deployment, run Compare scenarios against the fixtures, then record the real contract, transaction, and explorer links in README and portal submission copy.
 
-The deployment and hosting steps have **not** been executed for this workspace. They require a wallet approval, an identified public repository/hosting target, and action-time confirmation. There are no fabricated deployment artifacts in the project.
+GitHub Pages hosting and the public source release are complete. The contract deployment and live transaction smoke test are **not** complete: deployment requires the owner’s wallet signature, and no address or transaction has been fabricated.
 
 ## Transaction lifecycle
 

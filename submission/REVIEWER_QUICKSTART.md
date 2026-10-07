@@ -2,7 +2,7 @@
 
 ## Before a live review
 
-The source repository is public. GitHub Pages builds the frontend at `https://thunkybin.github.io/clauselens/`; verify that the Pages workflow has completed before sharing it. The ClauseLens contract still needs a real Bradbury deployment, its address added as the `NEXT_PUBLIC_CONTRACT_ADDRESS` repository variable, and a funded test wallet. Do not describe the app as live on-chain until the deployment transaction succeeds.
+The source repository is public and the frontend is live at `https://thunkybin.github.io/clauselens/`. The ClauseLens contract still needs a real Bradbury deployment, its address added as the `NEXT_PUBLIC_CONTRACT_ADDRESS` repository variable, and a funded test wallet. The current interface deliberately disables contract submissions until then. Do not describe the app as live on-chain until the deployment transaction succeeds.
 
 ## Five-minute path
 
