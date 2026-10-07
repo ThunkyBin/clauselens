@@ -1,0 +1,5 @@
+API SERVICE POLICY — VERSION 1.1
+Use of the standard plan includes 100,000 requests each month.
+We target monthly uptime of 99.95%; qualifying service interruptions may earn service credits.
+Automated agents and commercial use are allowed within the applicable rate limit.
+We keep customer request data for 30 days and do not sell it.

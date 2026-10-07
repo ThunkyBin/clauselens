@@ -1,0 +1,5 @@
+API SERVICE POLICY — VERSION 3
+Pricing: 100,000 requests per month are included in the standard plan.
+Service level: 99.95% monthly uptime target. Service credits apply for qualifying outages.
+Use: Commercial use by automated agents is prohibited. Existing agent integrations may be terminated.
+Data: Customer request data is retained for 30 days and is not sold.
